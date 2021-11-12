@@ -16,7 +16,7 @@ settings:
     global: never
   url.searchengines:
     global:
-      DEFAULT: http://www.google.com/search?={}
+      DEFAULT: https://duckduckgo.com/?q={}
       aw: https://wiki.archlinux.org/?search={}
       kos: https://ksp-kos.github.io/KOS_DOC/search.html?q={}
       y: https://www.youtube.com/results?search_query={}
