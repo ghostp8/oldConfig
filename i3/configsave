@@ -46,8 +46,8 @@ gaps outer 0
 # Shortcuts
 
 #change config
-bindsym $mod+n exec python script/swapconfig/swapconfigGap.py
-bindsym $mod+m exec python script/swapconfig/swapconfigFocus.py
+bindsym $mod+m exec python script/swapconfig/swapconfigGap.py
+bindsym $mod+n exec python script/swapconfig/swapconfigFocus.py
 
 
 
