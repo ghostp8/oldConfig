@@ -1,9 +1,19 @@
-github	https://github.com/ghostp8/config
+# misc
+github		https://github.com/ghostp8/config
 
-youtube	https://www.youtube.com/
-gmail	https://mail.google.com/mail/u/0/#inbox
 
-teams	https://teams.microsoft.com/_#/discover
+
+# google
+youtube		https://www.youtube.com/
+gmail		https://mail.google.com/mail/u/0/#inbox
+
+
+
+# microsoft
+teams		https://teams.microsoft.com/_#/discover
 onedrive	https://kinsalecommunityschool-my.sharepoint.com/personal/17cathalmccormick_kinsalecommunityschool_ie/_layouts/15/onedrive.aspx
 
 
+
+# youtube videos
+catvideo	https://www.youtube.com/watch?v=oc8gNFOuuoI
