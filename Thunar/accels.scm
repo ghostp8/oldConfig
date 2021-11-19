@@ -16,7 +16,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-network" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/contents/help-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-file-system" "")
-(gtk_accel_path "<Actions>/ThunarActions/uca-action-1636665062148546-1" "backslash")
+(gtk_accel_path "<Actions>/ThunarActions/uca-action-1636665062148546-1" "o")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/back-alt" "BackSpace")
 ; (gtk_accel_path "<Actions>/ThunarLauncher/paste" "<Primary>v")
 ; (gtk_accel_path "<Actions>/ThunarWindow/switch-next-tab" "<Primary>Page_Down")
