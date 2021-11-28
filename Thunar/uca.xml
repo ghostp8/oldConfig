@@ -10,4 +10,15 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>sxiv</icon>
+	<name>OpenSxivHere</name>
+	<unique-id>1638131009565482-1</unique-id>
+	<command>/usr/bin/sxiv %f</command>
+	<description>open sxiv in current directory</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<image-files/>
+</action>
 </actions>
