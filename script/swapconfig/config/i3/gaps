@@ -31,8 +31,7 @@ exec_always picom -b
 exec dunst
 
 # Shortcut Daemon
-exec_always sxhkd
-exec_always sxhkd -c $HOME/.config/sxhkd/pulseaudio
+exec_always /home/cathal/.config/sxhkd/launch.sh
 
 
 # I3 Gaps

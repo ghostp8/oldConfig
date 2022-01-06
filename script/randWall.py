@@ -6,7 +6,8 @@ import os
 
 ### settingis
 homeDir='/home/cathal/'
-path=homeDir+'pictures/wallpapers/DTfilter/'
+#path=homeDir+'pictures/wallpapers/DTfilter/'
+path=homeDir+'pictures/wallpapers/fav/'
 conf=homeDir+'.config/nitrogen/bg-saved.cfg'
 
 
