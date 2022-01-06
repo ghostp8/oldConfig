@@ -31,8 +31,7 @@ exec_always picom -b
 exec dunst
 
 # Shortcut Daemon
-exec_always sxhkd
-exec_always sxhkd -c $HOME/.config/sxhkd/pulseaudio
+exec_always /home/cathal/.config/sxhkd/launch.sh
 
 
 # I3 Gaps
@@ -64,8 +63,9 @@ bindsym --release $mod+apostrophe exec i3-msg border pixel 0
 
 #lock screen 
 # only .png
-#bindsym $mod+z exec i3lock -i /home/cathal/pictures/wallpapers/linux/i3-logo.png
+# #bindsym $mod+z exec i3lock -i /home/cathal/pictures/wallpapers/linux/i3-logo.png
 bindsym $mod+z exec /home/cathal/.config/i3/lockscript.sh
+
 
 # kill focused window
 bindsym $mod+q kill
@@ -107,7 +107,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout
 bindsym $mod+w layout stacked
-#bindsym $mod+w layout tabbed
+bindsym $mod+shift+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tilling / floating
