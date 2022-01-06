@@ -1,3 +1,3 @@
 import os
 
-os.system("python /home/cathal/script/swapconfig/swapconfig.py focus")
+os.system("python ~/script/swapconfig/swapconfig.py focus")

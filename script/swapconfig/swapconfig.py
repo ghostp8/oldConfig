@@ -1,5 +1,4 @@
-# script to copy config files to .config and reset
-# using python
+# python script to copy config files to .config and reset
 
 # imports
 import os
@@ -7,11 +6,12 @@ import sys
 
 
 # parameters 
+# not used
 target=sys.argv[1]
 
 # file paths
-confPath="/home/cathal/.config/"
-getPath="/home/cathal/script/swapconfig/config/"
+confPath='~/.config/'
+getPath="~/script/swapconfig/config/"
 
 #copy config
 os.system('cp '+getPath+'i3/'+target+' '+confPath+'i3/config')
