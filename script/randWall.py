@@ -20,7 +20,7 @@ if os.path.exists(path) :
 
     # set using nitrogen
     f=open(conf,'w')
-    f.write('[xin_-1]\nfile='+path+pic+'\nmode=0 \nbgcolor=#000000')
+    f.write(' [xin_-1]\nfile='+path+pic+'\nmode=0 \nbgcolor=#000000')
     f.close()
 
     # restore
