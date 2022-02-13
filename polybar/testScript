@@ -1,0 +1,16 @@
+#!/bin/bash
+
+apple=(pactl 'get-default-source')
+
+if [apple == 'yse']; then
+	echo "true"
+echo "false"
+fi
+
+echo $apple
+banana="alsa_input.pci-0000_2f_00.4.analog-stereo"
+
+pacmd set-default-sink 1 
+
+
+
