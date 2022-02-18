@@ -22,10 +22,10 @@ exec --no-startup-id nm-applet
 exec_always nitrogen --restore &
 
 # Polybar Launch Script
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Compositor
-exec_always picom -b
+#exec_always picom -b
 
 # Notifications Dunst
 exec dunst
