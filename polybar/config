@@ -19,7 +19,8 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #cc3f3f3f
+;background = #cc3f3f3f
+background = #cc111111
 ;background-alt = #cc3f3f3f
 ;foreground = ${xrdb:color7:#222}
 foreground = #ffffff
@@ -57,16 +58,16 @@ module-margin-right = 1
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = Font Awesome 5 Free:pixelsize=12;2
-font-4 = Font Awesome 5 FreeSolid:pixelsize=12;2
-font-5 = Font Awesome 5 Brands:pixelsize=12;2
+font-3 = Font Awesome 6 Free:pixelsize=12;2
+font-4 = Font Awesome 6 FreeSolid:pixelsize=12;2
+font-5 = Font Awesome 6 Brands:pixelsize=12;2
 
 
 ;========================
 
 modules-left = bspwm i3
-modules-center = xwindow cpu-graph cao 
-modules-right = pulseaudio memory cpu temperature filesystem eth date battery powermenu
+modules-center = xwindow cpu-graph 
+modules-right = pulseaudio setPulseaudioSink memory cpu temperature filesystem eth date battery powermenu
 
 ; disabled
 ; wlan
@@ -470,10 +471,15 @@ ramp-coreload-7 = █
 ramp-coreload-7-foreground = ${colors.adapta-red}
 ramp-coreload-font = 3
 
-[module/cao]
-type = custom/script
-exec = '/home/cathal/.config/polybar/test2'
-format= ch
-click-left = "/home/cathal/.config/polybar/testScript"
+
+[module/setPulseaudioSink]
+type= custom/menu
+label-open = 
+label-close =  cancel
+label-separator =" | "
+menu-0-0=speaker
+menu-0-0-exec= pactl set-default-sink 0
+menu-0-1=headphone
+menu-0-1-exec=pactl set-default-sink 2
 
 ; vim:ft=dosini
