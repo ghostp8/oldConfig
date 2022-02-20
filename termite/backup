@@ -42,46 +42,38 @@ browser = qutebrowser
 #scrollbar = off
 
 [colors]
+# If both of these are unset, cursor falls back to the foreground color,
+# and cursor_foreground falls back to the background color.
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
 
-# special
-foreground      = #f8f8f2
-foreground_bold = #f8f8f2
-cursor          = #f8f8f2
-background = #111111
-#background      = rgba(17,17,17, 0.95)
+#foreground = #dcdccc
+#foreground_bold = #ffffff
+#background = #3f3f3f
 
-# black
-# color0 = #000000
-color0  = #111111
-color8  = #4d4d4d
+# 20% background transparency (requires a compositor)
+background = rgba(63, 63, 63, .95)
 
-# red
-color1  = #ff5555
-color9  = #ff6e67
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
 
-# green
-color2  = #50fa7b
-color10 = #5af78e
-
-# yellow
-color3  = #f1fa8c
-color11 = #f4f99d
-
-# blue
-color4  = #257fad
-color12 = #257fad
-
-# magenta
-color5  = #ff79c6
-color13 = #ff92d0
-
-# cyan
-color6  = #00ffff
-color14 = #00ffff
-
-# white
-color7  = #bfbfbf
-color15 = #e6e6e6
+# Colors from color0 to color254 can be set
+color0 = #3f3f3f
+color1 = #705050
+color2 = #60b48a
+color3 = #dfaf8f
+color4 = #506070
+color5 = #dc8cc3
+color6 = #8cd0d3
+color7 = #dcdccc
+color8 = #709080
+color9 = #dca3a3
+color10 = #c3bf9f
+color11 = #f0dfaf
+color12 = #94bff3
+color13 = #ec93d3
+color14 = #93e0e3
+color15 = #ffffff
 
 [hints]
 #font = Monospace 12
@@ -90,3 +82,8 @@ color15 = #e6e6e6
 #active_foreground = #e68080
 #active_background = #3f3f3f
 #padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
