@@ -1,5 +1,7 @@
 let mapleader=" "
 
+
+
 syntax on
 
 set clipboard+=unnamedplus
@@ -29,6 +31,9 @@ set wildmode=longest,list,full
 
 " fix splitting
 set splitbelow splitright
+
+
+
 
 " line and colume highlighting
 set cursorline
