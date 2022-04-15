@@ -26,13 +26,12 @@ set number relativenumber
 set termguicolors
 " colorscheme codedark
 
+
 " autocompletion doesent seem to work
 set wildmode=longest,list,full
 
 " fix splitting
 set splitbelow splitright
-
-
 
 
 " line and colume highlighting
@@ -64,8 +63,14 @@ map <C-l> <c-w>l
 
 
 
-" Alias replace all to S
-nnoremap S :%s///gI<Left><Left><Left>
+" Alias replace all to s and replace word to ctrl s
+nnoremap s :%s/\<//gI<Left><Left><Left><Left>
+nnoremap <C-s> :%s/\<\>//gI<Left><Left><Left><Left><Left><Left>
+
+" Alias word search to /
+nnoremap / /\<
+
+
 
 
 

@@ -395,7 +395,7 @@ a.filter-item:hover,
   color: #111 !important;
 }
 .State--green {
-  background-color: #859900 !important;
+  background-color: #859900a !important;
   color: #111 !important;
 }
 .select-menu-filters {

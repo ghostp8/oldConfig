@@ -25,7 +25,7 @@ exec_always nitrogen --restore &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Compositor
-#exec_always picom -b
+exec_always picom -b
 
 # Notifications Dunst
 exec dunst
@@ -35,8 +35,8 @@ exec_always /home/cathal/.config/sxhkd/launch.sh
 
 
 # I3 Gaps
-for_window [class="^.*"] border pixel 0 
-gaps inner 0 
+for_window [class="^.*"] border pixel 0
+gaps inner 6
 gaps outer 0
 
 
@@ -55,15 +55,9 @@ floating_modifier $mod
 
 
 
-#border on for focus
-bindsym $mod+apostrophe exec i3-msg border pixel 2
-bindsym --release $mod+apostrophe exec i3-msg border pixel 0
-
-
-
-#lock screen 
+#lock screen
 # only .png
-# bindsym $mod+z exec i3lock -i /home/cathal/pictures/wallpapers/linux/i3-logo.png
+# #bindsym $mod+z exec i3lock -i /home/cathal/pictures/wallpapers/linux/i3-logo.png
 bindsym $mod+z exec /home/cathal/.config/i3/lockscript.sh
 
 
@@ -97,7 +91,7 @@ bindsym $mod+Shift+Right move right
 
 
 # split in horizontal orientation
-bindsym $mod+b split h 
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -182,11 +176,11 @@ set $ubgcolor = #ff0000
 # not used #969696
 
 
-#					border			background			text			indicator
-client.focused				$bgcolor		$bgcolor			$textcolor		$bgcolor
-client.unfocused			$ibgcolor		$ibgcolor			$textcolor		$ibgcolor
+#								titlebar		background			text			indicator
+client.focused					$bgcolor		$bgcolor			$textcolor		$bgcolor
+client.unfocused				$ibgcolor		$ibgcolor			$textcolor		$ibgcolor
 client.focused_inactive			$ibgcolor		$ibgcolor			$textcolor		$ibgcolor
-client.urgent				$ubgcolor		$ubgcolor			$textcolor		$ubgcolor
+client.urgent					$ubgcolor		$ubgcolor			$textcolor		$ubgcolor
 
 
 
@@ -205,13 +199,13 @@ mode "resize" {
         #bindsym Up resize grow height 10 px or 10 ppt
         #bindsym Down resize shrink height 10 px or 10 ppt
         #bindsym Right resize grow width 10 px or 10 ppt
-	
+
 	#move focus
 	bindsym $mod+h focus left
 	bindsym $mod+j focus down
 	bindsym $mod+k focus up
 	bindsym $mod+l focus right
-        
+
 	# back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"

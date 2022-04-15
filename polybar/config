@@ -65,8 +65,8 @@ font-5 = Font Awesome 6 Brands:pixelsize=12;2
 
 ;========================
 
-modules-left = bspwm i3
-modules-center = xwindow cpu-graph 
+modules-left = bspwm i3 xwindow
+modules-center = cpu-graph
 modules-right = pulseaudio setPulseaudioSink memory cpu temperature filesystem eth date battery powermenu
 
 ; disabled
@@ -77,7 +77,7 @@ modules-right = pulseaudio setPulseaudioSink memory cpu temperature filesystem e
 ;SEPERATOR FOR MODULES
 separator = |
 
-tray-position = right 
+tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
@@ -428,7 +428,7 @@ menu-1-1 = reboot
 menu-1-1-exec = systemctl reboot
 
 menu-2-0 = power off
-;menu-2-0-exec = sudo poweroff 
+;menu-2-0-exec = sudo poweroff
 menu-2-0-exec = systemctl poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
